@@ -1,0 +1,174 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - 你好
+    - 早上好
+    - 下午好
+    - 晚上好
+    - 你好
+
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - 好的
+    - 那就这样
+    - 明白了
+    - 拜拜
+    - 再见
+    - 继续进步哦
+    - 88
+    - 886
+
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - 非常好
+    - 听起来很正确
+    - 感谢
+    - 结果很好
+    - 你真智能
+    - 太棒了
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - 搜索的结果不正确呀
+    - 你在干什么
+    - 你是人工智障吗
+    - 太烂了
+    - 不
+    - 不对
+    - 错误的
+    - 你这不对
+    - 垃圾
+    - 什么东西
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - 你是电脑吗
+    - 可以转人工吗
+    - 我可以咨询人工吗
+
+- intent: search
+  examples: |
+    - 可以帮我查一篇论文吗？
+    - 我想要查找一篇论文
+    - 查论文
+    - 论文
+    - 可以帮我查找一个人吗
+
+- intent: search_paper_by_name
+  examples: |
+    - 论文的题目是[神经网络的发展历史](title)
+    - 这里有名字是[tranformer的改进](title)的这篇论文吗？
+    - 可以查找[关于tf-idf的深度学习改造](title)这篇论文吗？
+    - 我想要[如何能快速长高](title)这篇论文
+    - [后bert时代](title)这篇论文有吗
+
+- intent: search_paper_by_author
+  examples: |
+    - 有[张三](author)的论文吗？
+    - 这里可以查到[李四](author)的论文吗？
+    - 我想要[王五](author)的论文
+    - [赵某某](author)的论文
+
+- intent: search_paper_by_subject
+  examples: |
+    - 有关于[经济](subject)的论文吗？
+    - 想要查找关于[计算机](subject)的论文
+    - 有关[数学](subject)的论文
+
+- intent: search_paper_by_year
+  examples: |
+    - 有[2000](year)的论文吗
+    - [1998](year)的论文
+    - [某人](author)[2014](year)的论文
+    - [2019](year)有关[某方面](subject)的论文
+    -有关[某方面](subject)[2020](year)的论文
+
+- intent: search_person_by_name
+  examples: |
+    - 关于[张三丰](author)的信息
+    - [杨玉环](author)
+    - 可以给我找一下关于[蝎子莱莱](author)的信息吗？
+
+- intent: search_person_by_paper
+  examples: |
+    - [母猪的产后康复](title)这篇论文的[作者](alias)是谁
+    - [计算机体系结构](title)这篇论文的[作者](alias)都有谁
+    - [氢化铝的氧化反应](title)论文是谁写的
+
+- intent: search_person_by_subject
+  examples: |
+    - 可以帮我查找[计算机](subject)领域的[专家](alias)吗
+    - [数学](subject)方面谁的论文比较好
+    - [物理](subject)方面的[专家](alias)
+
+- intent: wait
+  examples: |
+    - 稍等
+    - 等等我还没有说完
+
+- synonym: 作者
+  examples: |
+    - 专家
+    - 编写者
+
+- regex: year
+  examples: |
+    -(1[6-9]\d{2} | 2[0-2]\d{2})
+
+- lookup: subject
+  examples: |
+    - 天文
+    - 地理
+    - 数学
+    - 教育
+    - 计算机
+    - 经济
+
+
+

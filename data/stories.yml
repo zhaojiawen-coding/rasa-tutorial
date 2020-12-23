@@ -1,0 +1,101 @@
+version: "2.0"
+
+stories:
+
+#- story: happy path
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_great
+#  - action: utter_happy
+#
+#- story: sad path 1
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: mood_great
+#  - action: utter_happy
+#
+#- story: sad path 2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+- story: search_paper by author success
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: search_paper_by_author
+    - action: utter_search_paper_by_author
+    - intent: mood_great
+    - action: utter_happy
+- story: search_paper by author fail
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: search_paper_by_author
+    - action: utter_search_paper_by_author
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+- story: search_paper path success
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: search_paper_by_name
+    - action: utter_search_paper_by_name
+    - intent: search_paper_by_author
+    - action: utter_search_paper_by_author
+    - intent: search_paper_by_subject
+    - action: utter_search_paper_by_subject
+    - intent: search_paper_by_year
+    - action: utter_search_paper_by_year
+    - intent: mood_great
+    - action: utter_happy
+#    - intent: wait
+#    - action: action_listen
+- story: search_paper path failed
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: search_paper_by_name
+    - action: utter_search_paper_by_name
+    - intent: search_paper_by_author
+    - action: utter_search_paper_by_author
+    - intent: search_paper_by_subject
+    - action: utter_search_paper_by_subject
+    - intent: search_paper_by_year
+    - action: utter_search_paper_by_year
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+
+- story: search_person success
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: search_person_by_name
+    - action: utter_search_person_by_name
+    - intent: search_person_by_paper
+    - action: utter_search_person_by_paper
+    - intent: search_person_by_subject
+    - action: utter_search_person_by_subject
+    - intent: mood_great
+    - action: utter_happy
+#    - intent: wait
+#    - action: action_listen
+- story: search_person failed
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: search_person_by_name
+    - action: utter_search_person_by_name
+    - intent: search_person_by_paper
+    - action: utter_search_person_by_paper
+    - intent: search_person_by_subject
+    - action: utter_search_person_by_subject
+    - intent: mood_unhappy
+    - action: utter_cheer_up

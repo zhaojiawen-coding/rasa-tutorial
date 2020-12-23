@@ -1,0 +1,132 @@
+[
+  {
+    "text": "88",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "year",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.6181584596633911,
+        "value": "88",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "886",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "year",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.6181584596633911,
+        "value": "886",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u8bba\u6587\u7684\u9898\u76ee\u662f\u795e\u7ecf\u7f51\u7edc\u7684\u53d1\u5c55\u5386\u53f2",
+    "entities": [
+      {
+        "start": 6,
+        "end": 15,
+        "value": "\u795e\u7ecf\u7f51\u7edc\u7684\u53d1\u5c55\u5386\u53f2",
+        "entity": "title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "title",
+        "start": 2,
+        "end": 3,
+        "confidence_entity": 0.509131669998169,
+        "value": "\u7684",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "title",
+        "start": 6,
+        "end": 15,
+        "confidence_entity": 0.672188937664032,
+        "value": "\u795e\u7ecf\u7f51\u7edc\u7684\u53d1\u5c55\u5386\u53f2",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u6bcd\u732a\u7684\u4ea7\u540e\u5eb7\u590d\u8fd9\u7bc7\u8bba\u6587\u7684\u4f5c\u8005\u662f\u8c01",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "\u6bcd\u732a\u7684\u4ea7\u540e\u5eb7\u590d",
+        "entity": "title"
+      },
+      {
+        "start": 12,
+        "end": 14,
+        "value": "\u4f5c\u8005",
+        "entity": "alias"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "title",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.6503028869628906,
+        "value": "\u6bcd\u732a\u7684\u4ea7\u540e\u5eb7\u590d",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "title",
+        "start": 11,
+        "end": 12,
+        "confidence_entity": 0.565947949886322,
+        "value": "\u7684",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "alias",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.9955429434776306,
+        "value": "\u4f5c\u8005",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u53ef\u4ee5\u5e2e\u6211\u67e5\u627e\u8ba1\u7b97\u673a\u9886\u57df\u7684\u4e13\u5bb6\u5417",
+    "entities": [
+      {
+        "start": 6,
+        "end": 9,
+        "value": "\u8ba1\u7b97\u673a",
+        "entity": "subject"
+      },
+      {
+        "start": 12,
+        "end": 14,
+        "value": "\u4e13\u5bb6",
+        "entity": "alias"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "alias",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.9957141280174255,
+        "value": "\u4f5c\u8005",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]
